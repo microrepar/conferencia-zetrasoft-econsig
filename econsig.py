@@ -40,8 +40,7 @@ def descontos():
                 # print(f'{rgf:0>5}', nome, f'{vb:0>3}', f'{descontos[rgf][nome][vb]:0>7.2f}')
                 rows.append([f'{rgf:0>5}', nome, f'{vb:0>3}', f'{descontos[rgf][nome][vb]:0>7.2f}'])    
 
-    # for vb in lista_verbas:
-    #     print(vb)
+    print(' or '.join([str(vb) for vb in sorted(lista_verbas.keys())]))
 
     return descontos
 
