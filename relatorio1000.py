@@ -8,7 +8,7 @@ def descontos():
 
     COLS = None
     descontos_por_rgf = {}
-    with path.open() as f:
+    with path.open(encoding='utf-8') as f:
         csv_reader = csv.reader(f, delimiter=';')
         for row in csv_reader:
 
